@@ -29,3 +29,8 @@
 
 * 如果怎麼印都是單面，要去設定->印表機與掃描機->管理->列印喜好設定裡面更改成四頁
 
+
+* custom_number設定你每面幾頁
+* pageNumber設定你總共要印幾頁 
+
+[github](https://github.com/jeff916121/LAB/tree/master/printer)
