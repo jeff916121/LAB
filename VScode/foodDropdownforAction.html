@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+	<select id="fruits01" class="select" name="fruits">
+	    <option value="0">Choose your fruits:</option>
+	    <option value="1">Banana</option>
+	    <option value="2">Mango</option>
+	</select>
+	
+	<div id = 'player'></div>
+	
+	
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	console.log( "ready!" );
+    // $('#fruits01').mouseover(function() {
+     $('#fruits01').click(function() {
+    	$('#player').html(``)
+    	print('hi')
+    });
+});
+
+function print(str) {
+	$('#player').append(`${str}`)
+}
+
+</script>
+</body>
+</html>
+
+
+

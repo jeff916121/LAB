@@ -1,11 +1,12 @@
 
+custom_number = 2 
 pageNumber= 18
+
 
 i = 0
 stringOdd = ""
 stringEven= ""
 
-custom_number = 4 ;
 
 j= int(pageNumber/(custom_number*2))
 j=j*2
@@ -33,21 +34,21 @@ while (count!=int(pageNumber/(custom_number*2))):
     j=j-2
     count=count+1  
       
-print(count)    
+# print(count)    
     
 if(count*custom_number*2<pageNumber):
     if(i*custom_number+custom_number>=pageNumber):
         
         stringOdd=stringOdd+ str(i*custom_number+1) +"-"+str(pageNumber) 
-        stringOdd=stringOdd+"!!!最後一張要從反面列印的紙堆中抽出喔"
+        stringOdd=stringOdd+"!!!最上面那一張要從反面列印的紙堆中抽出喔"
         
     else:
         stringOdd=stringOdd+ str(i*custom_number+1) +"-"+str(i*custom_number+custom_number) 
     
-print("正面四合一列印編號:")    
+print("正面" + str(custom_number) + "合一列印編號:")    
 print(stringOdd)
 print("")
-print("反面四合一列印編號:")
+print("反面" + str(custom_number) + "合一列印編號:")
 print(stringEven)
 
 
