@@ -727,3 +727,63 @@ e: updateSystemAddons@XPIInstall.jsm:3645:13
 [GP
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1541256046455	geckodriver	INFO	geckodriver 0.20.1
+1541256046481	geckodriver	INFO	Listening on 127.0.0.1:63531
+1541256049845	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\張道寬\\AppData\\Local\\Temp\\rust_mozprofile.fg5xWPfXvrjy"
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1541256052788	Marionette	INFO	Listening on port 63539
+1541256053007	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541256053064	Marionette	DEBUG	[6442450945] Frame script loaded
+1541256053066	Marionette	DEBUG	[6442450945] Frame script registered
+1541256056645	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1541256056930	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1541256057613	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://localhost:8080/foodDropdownforAction.html
+1541256057616	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://localhost:8080/foodDropdownforAction.html
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PAPZCTreeManager::Msg_SetTargetAPZC Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 4332, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 4332, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18108, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18108, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2240, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child1541256083877	Marionette	INFO	Stopped listening on port 63539
+[GPU 33584, Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542346741020	geckodriver	INFO	geckodriver 0.20.1
+1542346741044	geckodriver	INFO	Listening on 127.0.0.1:50732
+1542346745021	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\張道寬\\AppData\\Local\\Temp\\rust_mozprofile.rMBxQBgSKlcN"
+1542346748770	Marionette	INFO	Listening on port 50745
+1542346749201	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542346749250	Marionette	DEBUG	[4294967297] Frame script loaded
+1542346749251	Marionette	DEBUG	[4294967297] Frame script registered
+1542346752791	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1542346753388	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1542346754785	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://localhost:8080/foodDropdownforAction.html
+1542346754793	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://localhost:8080/foodDropdownforAction.html
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+[Parent 20572, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2696, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2696, Chrome_ChildThread] WARNING: pipe error: 109: file z:/bui[Child 5320, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5320, Chrome_ChildThread] WARNING: pipe error: 109: file z:/buil[Parent 20572, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21176, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21176, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc1542360455565	Marionette	INFO	Stopped listening on port 50745
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
