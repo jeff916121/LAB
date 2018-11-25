@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+
+		<style> #fruits01:hover {background-color: #3e8e41;}  </style>
+
+		<style> #fruits03:hover {background-color: #25A2D2;}  </style>
+		
+	</head>
+
+	<body style="background-color:gray;">
+		<select id="fruits01" class="select" name="fruits1" >
+			<option value="0">Choose your fruits:</option>
+			<option value="1">Avocado酪梨</option>
+			<option value="2">Guava芭樂</option>
+		</select>
+
+		<select id="fruits02" class="select" name="fruits2" >
+			<option value="0">Choose your fruits:</option>
+			<option value="1">Apple</option>
+			<option value="2">Cherry</option>
+		</select>
+
+		<select id="fruits03" class="select" name="fruits3" >
+			<option value="0">Choose your fruits:</option>
+			<option value="1">Blueberry</option>
+		</select>
+		
+		<div id = 'fruit_check'></div>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+		<script>
+		$(document).ready(function(){
+			console.log( "ready!" );
+			// $('#fruits01').mouseover(function() {
+			$('#fruits01').click(function() {
+				// $('fruits01').hover()
+				$('#fruit_check').html(``)
+				print('green fruits')
+			});
+		});
+
+		function print(str) {
+			$('#fruit_check').append(`${str}`)
+		}
+		</script>
+
+	</body>
+</html>
+
+
+
