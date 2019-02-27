@@ -179,42 +179,48 @@ def compare(pic1,pic2):
 
 #################### partial compare #####################
 
-count = 1
-itemnumber = 3
+def partial_compare(count,itemnumber,range):
 
+    print("partial compare turn")
+    while (count < (itemnumber+1) ):
+        print("Number "+str(count)+". item test")
+        temp = compare("./capture/partial_count"+str(count*2-1)+".png","./capture/partial_count"+str(count*2)+".png")
+        
+        if(count==2):
+            result = temp
 
+        if( temp < range ):
+            print("Move to action doesn't work")
+        else:
+            print("Move to action does work")
+        count = count + 1
 
-print("partial compare turn")
-while (count < (itemnumber+1) ):
-    print("Number "+str(count)+". item test")
-    if(compare("./capture/partial_count"+str(count*2-1)+".png","./capture/partial_count"+str(count*2)+".png") < 20 ):
-        print("Move to action doesn't work")
-    else:
-        print("Move to action does work")
-    count = count + 1
-
+    # return result
 #######################################################
 
 
   
 #################### whole compare #####################
 
-# print()
-# count = 1
-# itemnumber = 3
-
-# print("whole compare turn")
-# while (count < (itemnumber+1) ):
-#     print("Number "+str(count)+". item test")
-#     if(compare("./capture/whole_count"+str(count*2-1)+".png","./capture/whole_count"+str(count*2)+".png") < 20 ):
-#         print("Move to action doesn't work")
-#     else:
-#         print("Move to action does work")
-#     count = count + 1
+def whole_compare(count,itemnumber,range):
+    print("whole compare turn")
+    while (count < (itemnumber+1) ):
+        print("Number "+str(count)+". item test")
+        result = compare("./capture/whole_count"+str(count*2-1)+".png","./capture/whole_count"+str(count*2)+".png")
+        if( result < range ):
+            print("Move to action doesn't work")
+        else:
+            print("Move to action does work")
+        count = count + 1
+    return result
 
 #######################################################
 
+count = 1
+itemnumber = 3
+range = 35
 
+print ( partial_compare( count , itemnumber , range ) )
 
 #end of 模擬要測量的function
 tEnd = time.time()#計時結束
