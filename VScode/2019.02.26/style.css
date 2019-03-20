@@ -1,0 +1,48 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: rgb(177, 3, 3);
+}
+
+.box {
+    background-color: orange;
+    /* position: absolute; */
+    left: 0px;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+	/* padding: 30px;
+    margin: 10px;
+    border: 2px  rgb(167, 163, 156) solid;
+    border-radius: 5% ;
+    box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75) */
+}
+
+.box:hover {
+    background-color: rgba(0, 255, 170, 0.712);
+
+}
+/* 
+@media all and (max-width: 750  ){
+    .box {
+        background-color: orange;
+        width: 120px;
+        height: 90px;
+        margin: 7px;
+        border: 2px  rgb(167, 163, 156) solid;
+        border-radius: 5% ;
+        box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75)
+    }
+    .box:hover {
+        background-color: rgba(255, 166, 0, 0.712);
+        width: 124px;
+        height: 94px;
+        margin: 5px;
+        border: 2px  rgb(145, 94, 0) solid;
+        border-radius: 5% ;
+        box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75)
+    }
+
+} */
