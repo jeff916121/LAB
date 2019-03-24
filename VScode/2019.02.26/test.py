@@ -24,7 +24,7 @@ url="https://web.ee.ntu.edu.tw/"
 
 
 driver = webdriver.Firefox()
-# driver.maximize_window()
+driver.maximize_window()
 
 driver.get(url)
 
@@ -33,7 +33,7 @@ driversize= driver.get_window_size()
 driverwidth = driversize['width']
 driverheight = driversize['height']
 
-# print("driverwidth="+str(driverwidth)+" driverheight="+str(driverheight))
+print("driverwidth="+str(driverwidth)+" driverheight="+str(driverheight))
 
 
 
@@ -87,6 +87,8 @@ im = Image.open("./capture/whole.png")
 imageratiox= im.size[0] / driverwidth
 imageratioy= im.size[1] / driverheight
 
+print(f'{im.size[0]}x{im.size[1]}')
+
 # print("imageratiox="+str(imageratiox)+"   imageratioy="+str(imageratioy))
 
   
@@ -110,25 +112,21 @@ def hover_screenshot(wholecount,webelementreference,imageratiox,imageratioy):
   width  = webelementreference.size['width']
   height = webelementreference.size['height']
 
-  left = float( (x)*1.5 )
-  upper = float( (y)*1.5 )
-  right = float( (x+width )*1.5 )
-  lower = float( (y+height )*1.5 )
+  # left = float( (x)*1.5 )
+  # upper = float( (y)*1.5 )
+  # right = float( (x+width )*1.5 )
+  # lower = float( (y+height )*1.5 )
 
+  left = float( (x) )
+  upper = float( (y) )
+  right = float( (x+width ) )
+  lower = float( (y+height ) )
 
-  # print("x="+str(x))
-  # print("y="+str(y))
-  # print("width="+str(width))
-  # print("height="+str(height))
-
-  
   # im.crop（left, upper, right, lower）
 
 
 
   im = Image.open("./capture/whole_count"+str(partialcount*2-1)+".png")
-  # im = im.crop(( int((x-controlsize*width)*imageratiox ) , int((y-controlsize*height)*imageratioy) , int((x+controlsize*width)*imageratiox) , int((y+controlsize*height)*imageratioy) ))
-  # im = im.crop(int(x), int(y), int(width), int(height))
   im = im.crop( (left, upper, right, lower) )
   im.save("./capture/partial_count"+str(partialcount*2-1)+".png")
 
@@ -160,8 +158,6 @@ for hover_class_name in hoverclassli:
     print( hover_class_name + " 類 共有 "+str(len(s1))+" 個")
 
     # print(s1)
-
-    
 
     for subclass in s1:
 

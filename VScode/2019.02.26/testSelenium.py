@@ -40,4 +40,14 @@ time.sleep(0.001)
 
 soup = BeautifulSoup(driver.page_source,'html.parser')
 
+tStart = time.time() 
+driver.save_screenshot("./capture/1.png")
+tEnd = time.time()  #計時結束
+
 print(soup)
+
+# #列印結果
+print("It cost "+str(tEnd - tStart)+" sec" )    #會自動做近位
+
+
+
