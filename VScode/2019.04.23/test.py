@@ -16,12 +16,12 @@ from functools import reduce
 
 import time
 
-# url="https://programming.ee.ntu.edu.tw/#/home"
+
 
 url="https://web.ee.ntu.edu.tw/"
 
 # url = "https://zh.wikipedia.org/wiki/%E7%A3%81"
-
+# url="https://programming.ee.ntu.edu.tw/#/home"
 
 driver = webdriver.Firefox()
 driver.maximize_window()
@@ -95,13 +95,13 @@ print(f'{im.size[0]}x{im.size[1]}')
 def hover_screenshot(wholecount,webelementreference,imageratiox,imageratioy):
 
   partialcount = wholecount
-  webelementreference.screenshot("./capture/partial_count"+str(wholecount*2-1)+".png")
-  # driver.save_screenshot("./capture/whole_count"+str(wholecount*2-1)+".png")
+  # webelementreference.screenshot("./capture/partial_count"+str(wholecount*2-1)+".png")
+  driver.save_screenshot("./capture/whole_count"+str(wholecount*2-1)+".png")
   time.sleep(0.001)
   ActionChains(driver).move_to_element(webelementreference).perform()       
   time.sleep(0.001)
-  webelementreference.screenshot("./capture/partial_count"+str(wholecount*2)+".png")
-  # driver.save_screenshot("./capture/whole_count"+str(wholecount*2)+".png")
+  # webelementreference.screenshot("./capture/partial_count"+str(wholecount*2)+".png")
+  driver.save_screenshot("./capture/whole_count"+str(wholecount*2)+".png")
   wholecount = wholecount + 1
 
   ################## partial screenshot ##############################
@@ -126,14 +126,14 @@ def hover_screenshot(wholecount,webelementreference,imageratiox,imageratioy):
 
 
 
-  # im = Image.open("./capture/whole_count"+str(partialcount*2-1)+".png")
-  # im = im.crop( (left, upper, right, lower) )
-  # im.save("./capture/partial_count"+str(partialcount*2-1)+".png")
+  im = Image.open("./capture/whole_count"+str(partialcount*2-1)+".png")
+  im = im.crop( (left, upper, right, lower) )
+  im.save("./capture/partial_count"+str(partialcount*2-1)+".png")
 
 
-  # im = Image.open("./capture/whole_count"+str(partialcount*2)+".png")
-  # im = im.crop( (left, upper, right, lower) )
-  # im.save("./capture/partial_count"+str(partialcount*2)+".png")
+  im = Image.open("./capture/whole_count"+str(partialcount*2)+".png")
+  im = im.crop( (left, upper, right, lower) )
+  im.save("./capture/partial_count"+str(partialcount*2)+".png")
 
 
   partialcount = partialcount + 1

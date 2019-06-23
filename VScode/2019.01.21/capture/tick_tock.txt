@@ -1,2 +1,0 @@
-Partial screenshot : It cost 0.7701942920684814 sec
-Whole screenshot : It cost 0.5669031143188477 sec
